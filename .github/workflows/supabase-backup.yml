@@ -39,3 +39,4 @@ jobs:
         with:
           commit_message: "chore: auto-update database schema backup"
           file_pattern: "supabase/migrations/esquema_actualizado.sql"
+          branch: ${{ github.head_ref || github.ref_name }}
